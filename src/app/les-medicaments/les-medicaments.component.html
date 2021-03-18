@@ -1,1 +1,30 @@
-<p>les-medicaments works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Nom Commercial</th>
+                        <th>Id Famille</th>
+                        <th>Composition</th>
+                        <th>Effet secondaire possible</th>
+                        <th>Contre Indications</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let mydata of data[0]">
+                        <td>{{mydata.id}}</td>
+                        <td>{{mydata.nomCommercial}}</td>
+                        <td>{{mydata.idFamille}}</td>
+                        <td>{{mydata.composition}}</td>
+                        <td>{{mydata.effets}}</td>
+                        <td>{{mydata.contreIndications}}</td>
+
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
