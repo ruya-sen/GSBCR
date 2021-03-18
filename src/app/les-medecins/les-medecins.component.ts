@@ -1,6 +1,5 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, Input, OnInit } from '@angular/core';
-import { MedecinService } from '../services/medecin.service';
 
 @Component({
   selector: 'app-les-medecins',
