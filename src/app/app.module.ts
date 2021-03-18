@@ -9,12 +9,14 @@ import { LesMedecinsComponent } from './les-medecins/les-medecins.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { ConnexionComponent } from './connexion/connexion.component';
+import { RapportVisiteComponent } from './rapport-visite/rapport-visite.component';
 
 
 const appRoutes: Routes = [
   { path: 'connexion', component: ConnexionComponent},
   { path: 'les-medecins', component: LesMedecinsComponent},
   { path: 'les-medicaments', component: LesMedicamentsComponent},
+  { path: 'rapport', component: RapportVisiteComponent},
   { path: '',component: LesMedecinsComponent}
 ];
 
@@ -26,6 +28,7 @@ const appRoutes: Routes = [
     LesMedicamentsComponent,
     LesMedecinsComponent,
     ConnexionComponent,
+    RapportVisiteComponent,
   ],
   imports: [
     BrowserModule,

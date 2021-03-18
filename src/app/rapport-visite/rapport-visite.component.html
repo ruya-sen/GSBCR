@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Date</th>
+                        <th>Motif</th>
+                        <th>Bilan</th>
+                        <th>IdVisiteur</th>
+                        <th>IdMedecin</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let mydata of data[0]">
+                        <td>{{mydata.id}}</td>
+                        <td>{{mydata.date}}</td>
+                        <td>{{mydata.motif}}</td>
+                        <td>{{mydata.bilan}}</td>
+                        <td>{{mydata.idVisiteur}}</td>
+                        <td>{{mydata.idMedecin}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
