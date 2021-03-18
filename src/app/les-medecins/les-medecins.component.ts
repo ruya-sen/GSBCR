@@ -12,7 +12,7 @@ export class LesMedecinsComponent implements OnInit {
   data = [];
 
   constructor(private http: HttpClient) {
-    this.http.get('http://localhost/ruya.sen/PPESLAM2/GSBCR/GSBCR/src/app/serveur/connexion.php').subscribe(data => {
+    this.http.get('http://172.29.1.22/ruya.sen/PPESLAM2/GSBCR/GSBCR/src/app/serveur/connexion.php').subscribe(data => {
     this.data.push(data);
     console.log(this.data);
     }, error => console.error(error));
