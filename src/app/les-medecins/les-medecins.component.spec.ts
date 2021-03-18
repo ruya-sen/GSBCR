@@ -22,4 +22,4 @@ describe('LesMedecinsComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
-});
+})
