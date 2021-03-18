@@ -8,11 +8,13 @@ import { RouterModule, Routes } from '@angular/router';
 import { LesMedecinsComponent } from './les-medecins/les-medecins.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { ConnexionComponent } from './connexion/connexion.component';
 
 const appRoutes: Routes = [
-  { path: 'les-medecins', component: LesMedecinsComponent },
+  { path: 'connexion', component: ConnexionComponent},
+  { path: 'les-medecins', component: LesMedecinsComponent},
   { path: 'les-medicaments', component: LesMedicamentsComponent},
-  { path: '**', redirectTo: '/not-found' }
+  { path: '',component: LesMedecinsComponent}
 ];
 
 
@@ -22,6 +24,7 @@ const appRoutes: Routes = [
     ProjetGsbcrComponent,
     LesMedicamentsComponent,
     LesMedecinsComponent,
+    ConnexionComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,1 +1,9 @@
-<p>hey</p>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <ul class="list-group">
+                *ngFor="let medecin of medecins; let i = index" [medecinName]="medecin.name" [indexOfMedecin]="i" [id]="medecin.id"
+            </ul>
+        </div>
+    </div>
+</div>
