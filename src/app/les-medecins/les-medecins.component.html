@@ -1,9 +1,30 @@
 <div class="container">
     <div class="row">
         <div class="col-xs-12">
-            <ul class="list-group">
-                *ngFor="let medecin of medecins; let i = index" [medecinName]="medecin.name" [indexOfMedecin]="i" [id]="medecin.id"
-            </ul>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Nom</th>
+                        <th>Prénom</th>
+                        <th>Adresse</th>
+                        <th>Tel</th>
+                        <th>Spécialité complémentaire</th>
+                        <th>Département</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let mydata of data">
+                        <td>{{mydata.id}}</td>
+                        <td>{{mydata.nom}}</td>
+                        <td>{{mydata.prenom}}</td>
+                        <td>{{mydata.adresse}}</td>
+                        <td>{{mydata.tel}}</td>
+                        <td>{{mydata.specialitecomplementaire}}</td>
+                        <td>{{mydata.departement}}</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 </div>

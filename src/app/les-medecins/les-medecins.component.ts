@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, Input, OnInit } from '@angular/core';
 import { MedecinService } from '../services/medecin.service';
 
@@ -8,12 +9,14 @@ import { MedecinService } from '../services/medecin.service';
 })
 export class LesMedecinsComponent implements OnInit {
 
-  @Input() medecinName: string;
-  @Input() indexOfMedecin: number;
-  @Input() id: number;
-  medecins: any[];
+  data = [];
 
-  constructor() { }
+  constructor(private http: HttpClient) {
+    this.http.get('http://localhost/ruya.sen/PPESLAM2/GSBCR2/serveur/connexion.php').subscribe(data => {
+    this.data.push(data);
+    console.log(this.data);
+    }, error => console.error(error));
+  }
 
   ngOnInit(): void {
   }

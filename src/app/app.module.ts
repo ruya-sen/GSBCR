@@ -10,6 +10,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { ConnexionComponent } from './connexion/connexion.component';
 
+
 const appRoutes: Routes = [
   { path: 'connexion', component: ConnexionComponent},
   { path: 'les-medecins', component: LesMedecinsComponent},
@@ -31,7 +32,7 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes),
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
