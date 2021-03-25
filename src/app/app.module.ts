@@ -10,6 +10,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { ConnexionComponent } from './connexion/connexion.component';
 import { RapportVisiteComponent } from './rapport-visite/rapport-visite.component';
+import { FilterPipe } from './filter.pipe';
+
 
 
 const appRoutes: Routes = [
@@ -29,6 +31,7 @@ const appRoutes: Routes = [
     LesMedecinsComponent,
     ConnexionComponent,
     RapportVisiteComponent,
+    FilterPipe,
   ],
   imports: [
     BrowserModule,

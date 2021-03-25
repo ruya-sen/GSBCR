@@ -1,5 +1,5 @@
 <?php
- $cnx = new PDO('mysql:host=localhost;dbname=gsbrapports_new', 'root','');
+ $cnx = new PDO('mysql:host=localhost;dbname=gsbrapports', 'root','');
  $sql = "select * FROM medecin";
  $sth = $cnx->prepare($sql);
  $sth->execute();

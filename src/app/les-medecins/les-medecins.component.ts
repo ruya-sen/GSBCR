@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
@@ -9,9 +9,10 @@ import { Component, Input, OnInit } from '@angular/core';
 export class LesMedecinsComponent implements OnInit {
 
   data = [];
+  
 
   constructor(private http: HttpClient) {
-    this.http.get('http://172.29.1.22/ruya.sen/PPESLAM2/GSBCR/GSBCR/src/app/serveur/connexion.php').subscribe(data => {
+    this.http.get('https://gr2.sio-carriat.com/gsbcr/?noms').subscribe(data => {
     this.data.push(data);
     console.log(this.data);
     }, error => console.error(error));
