@@ -12,7 +12,7 @@ export class LesMedicamentsComponent implements OnInit {
   data = [];
 
   constructor(private http: HttpClient) {
-    this.http.get('http://172.29.1.28/Quentin_chanussot/GSB%20tom/medicaments.php').subscribe(data => {
+    this.http.get('https://gr2.sio-carriat.com/gsbcr/?nomMed').subscribe(data => {
       this.data.push(data);
       console.log(this.data);
       }, error => console.error(error));

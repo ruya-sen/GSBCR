@@ -19,7 +19,7 @@ const appRoutes: Routes = [
   { path: 'les-medecins', component: LesMedecinsComponent},
   { path: 'les-medicaments', component: LesMedicamentsComponent},
   { path: 'rapport', component: RapportVisiteComponent},
-  { path: '',component: LesMedecinsComponent}
+  { path: '',component: LesMedecinsComponent},
 ];
 
 

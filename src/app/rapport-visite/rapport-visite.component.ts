@@ -10,7 +10,7 @@ export class RapportVisiteComponent implements OnInit {
   data = [];
 
   constructor(private http: HttpClient) {
-    this.http.get('http://172.29.1.21/LECRIVAIN/GSBCR/src/app/serveur/rapport.php').subscribe(data => {
+    this.http.get('https://gr2.sio-carriat.com/gsbcr/?nomRapport').subscribe(data => {
     this.data.push(data);
     console.log(this.data);
     }, error => console.error(error));
