@@ -8,13 +8,13 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class LesMedecinsComponent implements OnInit {
 
-  data = [];
+  medecins = [];
   
 
   constructor(private http: HttpClient) {
     this.http.get('https://gr2.sio-carriat.com/gsbcr/?noms').subscribe(data => {
-    this.data.push(data);
-    console.log(this.data);
+    this.medecins.push(data);
+    console.log(this.medecins);
     }, error => console.error(error));
   }
 

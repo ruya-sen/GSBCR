@@ -11,6 +11,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { ConnexionComponent } from './connexion/connexion.component';
 import { RapportVisiteComponent } from './rapport-visite/rapport-visite.component';
 import { FilterPipe } from './filter.pipe';
+import { MedecinsDetailsComponent } from './medecins-details/medecins-details.component';
 
 
 
@@ -19,6 +20,7 @@ const appRoutes: Routes = [
   { path: 'les-medecins', component: LesMedecinsComponent},
   { path: 'les-medicaments', component: LesMedicamentsComponent},
   { path: 'rapport', component: RapportVisiteComponent},
+  { path: 'details-medecins/:id', component: MedecinsDetailsComponent},
   { path: '',component: LesMedecinsComponent},
 ];
 
@@ -32,6 +34,7 @@ const appRoutes: Routes = [
     ConnexionComponent,
     RapportVisiteComponent,
     FilterPipe,
+    MedecinsDetailsComponent,
   ],
   imports: [
     BrowserModule,
